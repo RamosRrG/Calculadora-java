@@ -4,10 +4,6 @@ import java.util.ArrayList;
 
 public class LeitorExpressao {
 
-    public String latir() {
-        return "au au0";
-    }
-
     public ArrayList<String> tokens(String expressao) {
         ArrayList<String> token = new ArrayList<String>();
         int tamanho = expressao.length();

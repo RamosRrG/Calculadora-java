@@ -14,8 +14,7 @@ public class motorCalculo {
 
 
 
-
-    public  ArrayList<String> resolveMultiplicacaoDivisao(ArrayList<String> expressao){
+    private  ArrayList<String> resolveMultiplicacaoDivisao(ArrayList<String> expressao){
         ArrayList<String> pre_resultado = new ArrayList<>();
         for (int i = 0; i < expressao.size(); i++) {       //tamanho da lista de array
             String objetoExpressao = expressao.get(i);     //capturando o objeto do indice
@@ -35,7 +34,7 @@ public class motorCalculo {
         }
         return pre_resultado;
     }
-    public ArrayList<String> resolveAdicaoSubtracao(ArrayList<String> pre_calculo){
+    private ArrayList<String> resolveAdicaoSubtracao(ArrayList<String> pre_calculo){
         ArrayList<String> calculoFinal = new ArrayList<>();
         for (int i = 0; i < pre_calculo.size() ; i++) {
             if(!pre_calculo.get(i).equals("+")|| !pre_calculo.get(i).equals("-")){
