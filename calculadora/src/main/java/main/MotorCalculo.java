@@ -10,8 +10,6 @@ public class MotorCalculo {
         ArrayList<String> token_precalc = resolveMultiplicacaoDivisao(token);
         ArrayList<String> calculo = resolveAdicaoSubtracao(token_precalc);
         return calculo;
-
-
     }
 
 

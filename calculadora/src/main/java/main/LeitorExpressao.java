@@ -10,7 +10,7 @@ public class LeitorExpressao {
         String caracterAtualAcumulado = "";
         for (int i = 0; i < tamanho; i++) {
             char caracterAtual = expressao.charAt(i);
-            if (Character.isDigit(caracterAtual)) {
+            if (Character.isDigit(caracterAtual) || caracterAtual == '.' ||caracterAtual == ',' ) {
                 caracterAtualAcumulado = caracterAtualAcumulado + caracterAtual;
             } else if (caracterAtual == '+' || caracterAtual == '-' || caracterAtual == '*' || caracterAtual == '/') {
                 if (!caracterAtualAcumulado.isEmpty()) {
