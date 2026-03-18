@@ -12,9 +12,18 @@ public class MotorCalculo {
         return calculo;
     }
 
+    private ArrayList<String> resolveChaves(ArrayList<String> expressao) {
+        ArrayList<String> chavesSeparadas = new ArrayList<>();
+        for (int i = 0; i < expressao.size(); i++) {
+            if (expressao.get(i).equals("(")) {
+                for (int j = i + 1; j < expressao.size(); j++) {
+                    if (!expressao.get(j).equals(")")) {
 
-
-
+                    }
+                }
+            }
+        }
+    }
 
     private  ArrayList<String> resolveMultiplicacaoDivisao(ArrayList<String> expressao){
         ArrayList<String> pre_resultado = new ArrayList<>();
@@ -27,7 +36,7 @@ public class MotorCalculo {
                 double posterior = Double.parseDouble(expressao.get(i+1));
              if (objetoExpressao.equals("*")){
                  double resultado = anterior*posterior;
-                 pre_resultado.removeLast();
+                 pre_resultado.removeLast();s
                  pre_resultado.add(String.valueOf(resultado));
                  i++;
              }if(objetoExpressao.equals("/")){
@@ -63,6 +72,4 @@ public class MotorCalculo {
         }
         return calculoFinal;
     }
-
-
 }
